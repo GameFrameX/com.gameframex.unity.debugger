@@ -12,6 +12,7 @@ namespace GameFrameX.Debugger.Runtime
     /// <summary>
     /// 调试器管理器。
     /// </summary>
+    [UnityEngine.Scripting.Preserve]
     internal sealed partial class DebuggerManager : GameFrameworkModule, IDebuggerManager
     {
         private readonly DebuggerWindowGroup m_DebuggerWindowRoot;
@@ -20,6 +21,7 @@ namespace GameFrameX.Debugger.Runtime
         /// <summary>
         /// 初始化调试器管理器的新实例。
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public DebuggerManager()
         {
             m_DebuggerWindowRoot = new DebuggerWindowGroup();
