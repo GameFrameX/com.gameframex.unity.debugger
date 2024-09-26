@@ -6,6 +6,7 @@
 //------------------------------------------------------------
 
 using System.Collections.Generic;
+using GameFrameX.Runtime;
 
 namespace GameFrameX.Debugger.Runtime
 {

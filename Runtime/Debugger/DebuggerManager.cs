@@ -5,6 +5,8 @@
 // Feedback: mailto:ellan@gameframework.cn
 //------------------------------------------------------------
 
+using GameFrameX.Runtime;
+
 namespace GameFrameX.Debugger.Runtime
 {
     /// <summary>
@@ -30,10 +32,7 @@ namespace GameFrameX.Debugger.Runtime
         /// <remarks>优先级较高的模块会优先轮询，并且关闭操作会后进行。</remarks>
         protected override int Priority
         {
-            get
-            {
-                return -1;
-            }
+            get { return -1; }
         }
 
         /// <summary>
@@ -41,14 +40,8 @@ namespace GameFrameX.Debugger.Runtime
         /// </summary>
         public bool ActiveWindow
         {
-            get
-            {
-                return m_ActiveWindow;
-            }
-            set
-            {
-                m_ActiveWindow = value;
-            }
+            get { return m_ActiveWindow; }
+            set { m_ActiveWindow = value; }
         }
 
         /// <summary>
@@ -56,10 +49,7 @@ namespace GameFrameX.Debugger.Runtime
         /// </summary>
         public IDebuggerWindowGroup DebuggerWindowRoot
         {
-            get
-            {
-                return m_DebuggerWindowRoot;
-            }
+            get { return m_DebuggerWindowRoot; }
         }
 
         /// <summary>
