@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.2](https://github.com/GameFrameX/com.gameframex.unity.debugger/tree/1.0.2) (2025-05-30)
+
+[Full Changelog](https://github.com/GameFrameX/com.gameframex.unity.debugger/compare/1.0.1...1.0.2)
+
 ## [1.0.1](https://github.com/GameFrameX/com.gameframex.unity.debugger/tree/1.0.1) (2024-09-26)
 
 [Full Changelog](https://github.com/GameFrameX/com.gameframex.unity.debugger/compare/953f7da1862456aac7f18a1cf88a077ee8d97dca...1.0.1)
