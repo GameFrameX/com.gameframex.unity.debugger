@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/gameframex/com.gameframex.unity.debugger/compare/1.0.3...1.1.0) (2025-12-23)
+
+
+### Features
+
+* **ci:** change ci ([86e1592](https://github.com/gameframex/com.gameframex.unity.debugger/commit/86e1592aec4afcbc8c74d8d6ea790d2034ceb4df))
+
 # Changelog
 
 ## [1.0.3](https://github.com/GameFrameX/com.gameframex.unity.debugger/tree/1.0.3) (2025-05-31)
