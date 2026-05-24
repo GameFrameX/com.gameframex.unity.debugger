@@ -1,19 +1,55 @@
-﻿## HOMEPAGE
+<div align="center">
+  <img src="https://download.alianblank.com/gameframex/gameframex_logo_320.png" alt="Game Frame X Logo" width="160" />
+</div>
 
-GameFrameX 的 Debugger 资源组件
+# Game Frame X Debugger
 
-**Debugger 资源组件 (Debugger Component)** - 提供调试日志相关的看板。
+[![GitHub release](https://img.shields.io/github/v/release/GameFrameX/com.gameframex.unity.debugger?style=flat-square)](https://github.com/GameFrameX/com.gameframex.unity.debugger/releases)
+[![License](https://img.shields.io/github/license/GameFrameX/com.gameframex.unity.debugger?style=flat-square)](https://github.com/GameFrameX/com.gameframex.unity.debugger/blob/main/LICENSE.md)
+[![Documentation](https://img.shields.io/badge/Documentation-Online-blue?style=flat-square)](https://gameframex.doc.alianblank.com)
 
-# 使用文档(文档编写于GPT4)
+**All-in-One Solution for Indie Game Development · Empowering Indie Developers' Dreams**
 
-## 注意事项
+[Documentation](https://gameframex.doc.alianblank.com) · [Quick Start](#quick-start) · [QQ Group](https://qm.qq.com/q/5s5e1e6e6e)
 
-# 使用方式(任选其一)
+**Language**: **English** | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
 
-1. 直接在 `manifest.json` 的文件中的 `dependencies` 节点下添加以下内容
+---
+
+## Project Overview
+
+Game Frame X Debugger is a Unity debugging tool package based on the GameFrameX framework, providing debug log dashboards and visualization.
+
+**Debugger Component** - Provides a debug log dashboard for runtime monitoring.
+
+## Quick Start
+
+### System Requirements
+
+- Unity 2017.1 or higher
+
+### Installation
+
+Choose one of the following methods:
+
+1. Add the following to the `dependencies` section in your project's `manifest.json`:
    ```json
-      {"com.gameframex.unity.debugger": "https://github.com/GameFrameX/com.gameframex.unity.debugger.git"}
-    ```
-2. 在Unity 的`Packages Manager` 中使用`Git URL` 的方式添加库,地址为：https://github.com/GameFrameX/com.gameframex.unity.debugger.git
+   {"com.gameframex.unity.debugger": "https://github.com/GameFrameX/com.gameframex.unity.debugger.git"}
+   ```
 
-3. 直接下载仓库放置到Unity 项目的`Packages` 目录下。会自动加载识别
+2. Use `Git URL` in Unity's Package Manager:
+   ```
+   https://github.com/GameFrameX/com.gameframex.unity.debugger.git
+   ```
+
+3. Download the repository and place it in your Unity project's `Packages` directory. It will be loaded automatically.
+
+## Documentation & Resources
+
+- Documentation: https://gameframex.doc.alianblank.com
+- Repository: https://github.com/GameFrameX/com.gameframex.unity.debugger
+- Issues: https://github.com/GameFrameX/com.gameframex.unity.debugger/issues
+
+## License
+
+See [LICENSE](LICENSE.md) for details.
