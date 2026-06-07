@@ -66,6 +66,21 @@ Then add the package to `dependencies`:
 - 倉庫地址: https://github.com/GameFrameX/com.gameframex.unity.debugger
 - 問題回報: https://github.com/GameFrameX/com.gameframex.unity.debugger/issues
 
+
+## 依賴
+
+| 套件 | 說明 |
+|------|------|
+| (无) | - |
+
+
+## 社區與支援
+
+- QQ群: 467608841 / 233840761
+
+## 更新日誌
+
+查看 [Releases](https://github.com/GameFrameX/gameframex/com.gameframex.unity.debugger/releases) 了解更新日誌。
 ## 開源協議
 
 詳細資訊請查看 [LICENSE](LICENSE.md) 檔案。

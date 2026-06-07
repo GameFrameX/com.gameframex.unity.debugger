@@ -66,6 +66,21 @@ Then add the package to `dependencies`:
 - リポジトリ: https://github.com/GameFrameX/com.gameframex.unity.debugger
 - イシュー: https://github.com/GameFrameX/com.gameframex.unity.debugger/issues
 
+
+## 依存関係
+
+| パッケージ | 説明 |
+|----------|------|
+| (无) | - |
+
+
+## コミュニティとサポート
+
+- QQグループ: 467608841 / 233840761
+
+## 変更履歴
+
+[Releases](https://github.com/GameFrameX/gameframex/com.gameframex.unity.debugger/releases) で変更履歴を確認してください。
 ## ライセンス
 
 詳細は [LICENSE](LICENSE.md) をご覧ください。

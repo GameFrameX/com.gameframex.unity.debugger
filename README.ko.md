@@ -66,6 +66,21 @@ Then add the package to `dependencies`:
 - 저장소: https://github.com/GameFrameX/com.gameframex.unity.debugger
 - 이슈: https://github.com/GameFrameX/com.gameframex.unity.debugger/issues
 
+
+## 의존성
+
+| 패키지 | 설명 |
+|--------|------|
+| (无) | - |
+
+
+## 커뮤니티 및 지원
+
+- QQ 그룹: 467608841 / 233840761
+
+## 변경 로그
+
+[Releases](https://github.com/GameFrameX/gameframex/com.gameframex.unity.debugger/releases)에서 변경 로그를 확인하세요.
 ## 라이선스
 
 자세한 내용은 [LICENSE](LICENSE.md)를 참조하세요.
