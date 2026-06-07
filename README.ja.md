@@ -29,25 +29,36 @@ Game Frame X Debugger は、GameFrameX フレームワークに基づく Unity �
 
 ## クイックスタート
 
-### 動作環境
-
-- Unity 2017.1 以上
-
 ### インストール
 
-以下のいずれかの方法を選択してください：
+Unity プロジェクトの `Packages/manifest.json` を編集し、`scopedRegistries` セクションを追加してください：
 
-1. プロジェクトの `manifest.json` の `dependencies` セクションに以下を追加：
-   ```json
-   {"com.gameframex.unity.debugger": "https://github.com/GameFrameX/com.gameframex.unity.debugger.git"}
-   ```
+```json
+{
+  "scopedRegistries": [
+    {
+      "name": "GameFrameX",
+      "url": "https://gameframex.upm.alianblank.uk",
+      "scopes": [
+        "com.gameframex"
+      ]
+    }
+  ]
+}
+```
 
-2. Unity の Package Manager で `Git URL` を使用：
-   ```
-   https://github.com/GameFrameX/com.gameframex.unity.debugger.git
-   ```
+`scopes` は、どのパッケージをこのレジストリから解決するかを制御します。`com.gameframex` で始まるパッケージのみがこのレジストリから取得されます。
 
-3. リポジトリをダウンロードして Unity プロジェクトの `Packages` ディレクトリに配置。自動的にロードされます。
+Then add the package to `dependencies`:
+
+```json
+{
+  "dependencies": {
+    "com.gameframex.unity.debugger": "1.1.0"
+  }
+}
+```
+
 
 ## ドキュメントとリソース
 

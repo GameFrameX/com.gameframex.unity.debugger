@@ -29,25 +29,36 @@ Game Frame X Debugger is a Unity debugging tool package based on the GameFrameX 
 
 ## Quick Start
 
-### System Requirements
-
-- Unity 2017.1 or higher
-
 ### Installation
 
-Choose one of the following methods:
+Edit your Unity project's `Packages/manifest.json` and add the `scopedRegistries` section:
 
-1. Add the following to the `dependencies` section in your project's `manifest.json`:
-   ```json
-   {"com.gameframex.unity.debugger": "https://github.com/GameFrameX/com.gameframex.unity.debugger.git"}
-   ```
+```json
+{
+  "scopedRegistries": [
+    {
+      "name": "GameFrameX",
+      "url": "https://gameframex.upm.alianblank.uk",
+      "scopes": [
+        "com.gameframex"
+      ]
+    }
+  ]
+}
+```
 
-2. Use `Git URL` in Unity's Package Manager:
-   ```
-   https://github.com/GameFrameX/com.gameframex.unity.debugger.git
-   ```
+`scopes` controls which packages are resolved through this registry. Only packages whose names start with `com.gameframex` will be fetched from it.
 
-3. Download the repository and place it in your Unity project's `Packages` directory. It will be loaded automatically.
+Then add the package to `dependencies`:
+
+```json
+{
+  "dependencies": {
+    "com.gameframex.unity.debugger": "1.1.0"
+  }
+}
+```
+
 
 ## Documentation & Resources
 

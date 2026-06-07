@@ -29,25 +29,36 @@ Game Frame X Debugger는 GameFrameX 프레임워크 기반의 Unity 디버깅 �
 
 ## 빠른 시작
 
-### 시스템 요구 사항
-
-- Unity 2017.1 이상
-
 ### 설치
 
-다음 방법 중 하나를 선택하세요:
+Unity 프로젝트의 `Packages/manifest.json`을 편집하여 `scopedRegistries` 섹션을 추가하세요:
 
-1. 프로젝트의 `manifest.json` 파일의 `dependencies` 섹션에 다음 내용을 추가:
-   ```json
-   {"com.gameframex.unity.debugger": "https://github.com/GameFrameX/com.gameframex.unity.debugger.git"}
-   ```
+```json
+{
+  "scopedRegistries": [
+    {
+      "name": "GameFrameX",
+      "url": "https://gameframex.upm.alianblank.uk",
+      "scopes": [
+        "com.gameframex"
+      ]
+    }
+  ]
+}
+```
 
-2. Unity의 Package Manager에서 `Git URL`을 사용하여 추가:
-   ```
-   https://github.com/GameFrameX/com.gameframex.unity.debugger.git
-   ```
+`scopes`는 이 레지스트리를 통해 어떤 패키지를 해석할지 제어합니다. `com.gameframex`로 시작하는 패키지만 이 레지스트리에서 가져옵니다.
 
-3. 저장소를 다운로드하여 Unity 프로젝트의 `Packages` 디렉토리에 배치하면 자동으로 로드됩니다.
+Then add the package to `dependencies`:
+
+```json
+{
+  "dependencies": {
+    "com.gameframex.unity.debugger": "1.1.0"
+  }
+}
+```
+
 
 ## 문서 및 자료
 
