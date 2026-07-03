@@ -18,6 +18,7 @@ namespace GameFrameX.Debugger.Runtime
     /// </summary>
     [DisallowMultipleComponent]
     [AddComponentMenu("Game Framework/Debugger")]
+    [GameFrameXAutoComponent(9000)]
     public sealed partial class DebuggerComponent : GameFrameworkComponent
     {
         /// <summary>
