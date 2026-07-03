@@ -51,8 +51,8 @@ namespace GameFrameX.Debugger.Runtime
 #else
                     DrawItem("Game Identifier", Application.bundleIdentifier);
 #endif
-                    DrawItem("Game Framework Version", Version.GameFrameworkVersion);
-                    DrawItem("Game Version", Utility.Text.Format("{0} ({1})", Version.GameVersion, Version.GameFrameworkVersion));
+                    DrawItem("Game Framework Version",  GameVersion.GameFrameworkVersion);
+                    DrawItem("Game Version", Utility.Text.Format("{0} ({1})", GameVersion.AppVersion, GameVersion.GameFrameworkVersion));
                     // DrawItem("Resource Version", m_BaseComponent.EditorResourceMode ? "Unavailable in editor resource mode" : (string.IsNullOrEmpty(m_ResourceComponent.ApplicableGameVersion) ? "Unknown" : Utility.Text.Format("{0} ({1})", m_ResourceComponent.ApplicableGameVersion, m_ResourceComponent.InternalResourceVersion)));
                     DrawItem("Application Version", Application.version);
                     DrawItem("Unity Version", Application.unityVersion);
