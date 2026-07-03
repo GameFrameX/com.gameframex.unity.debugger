@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/gameframex/com.gameframex.unity.debugger/compare/1.1.1...1.2.0) (2026-07-03)
+
+
+### Bug Fixes
+
+* **debugger:** 修复环境信息窗口错误的 Version 引用 ([c6a7b9b](https://github.com/gameframex/com.gameframex.unity.debugger/commit/c6a7b9b4e853ddf39311991b325fe1220fefcb70))
+
+
+### Features
+
+* **debugger:** 为 DebuggerComponent 添加自动注册特性 ([7d185ee](https://github.com/gameframex/com.gameframex.unity.debugger/commit/7d185eec879287bed5619964ea30eb83987a06ca))
+
 ## [1.1.1](https://github.com/gameframex/com.gameframex.unity.debugger/compare/1.1.0...1.1.1) (2026-06-08)
 
 
