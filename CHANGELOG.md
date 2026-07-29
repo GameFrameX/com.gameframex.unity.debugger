@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/gameframex/com.gameframex.unity.debugger/compare/1.2.0...1.3.0) (2026-07-29)
+
+
+### Features
+
+* **package:** 添加依赖项 com.gameframex.unity 和 com.gameframex.unity.setting ([f397494](https://github.com/gameframex/com.gameframex.unity.debugger/commit/f39749429ae6ebe45cc53caac1d9f01958098369))
+
 # [1.2.0](https://github.com/gameframex/com.gameframex.unity.debugger/compare/1.1.1...1.2.0) (2026-07-03)
 
 
