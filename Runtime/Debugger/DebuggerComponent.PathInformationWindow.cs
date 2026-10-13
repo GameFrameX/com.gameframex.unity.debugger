@@ -21,13 +21,13 @@ namespace GameFrameX.Debugger.Runtime
                 GUILayout.Label("<b>Path Information</b>");
                 GUILayout.BeginVertical("box");
                 {
-                    DrawItem("Current Directory", Utility.Path.GetRegularPath(Environment.CurrentDirectory));
-                    DrawItem("Data Path", Utility.Path.GetRegularPath(Application.dataPath));
-                    DrawItem("Persistent Data Path", Utility.Path.GetRegularPath(Application.persistentDataPath));
-                    DrawItem("Streaming Assets Path", Utility.Path.GetRegularPath(Application.streamingAssetsPath));
-                    DrawItem("Temporary Cache Path", Utility.Path.GetRegularPath(Application.temporaryCachePath));
+                    DrawItem("Current Directory", PathHelper.NormalizePath(Environment.CurrentDirectory));
+                    DrawItem("Data Path", PathHelper.NormalizePath(Application.dataPath));
+                    DrawItem("Persistent Data Path", PathHelper.NormalizePath(Application.persistentDataPath));
+                    DrawItem("Streaming Assets Path", PathHelper.NormalizePath(Application.streamingAssetsPath));
+                    DrawItem("Temporary Cache Path", PathHelper.NormalizePath(Application.temporaryCachePath));
 #if UNITY_2018_3_OR_NEWER
-                    DrawItem("Console Log Path", Utility.Path.GetRegularPath(Application.consoleLogPath));
+                    DrawItem("Console Log Path", PathHelper.NormalizePath(Application.consoleLogPath));
 #endif
                 }
                 GUILayout.EndVertical();
