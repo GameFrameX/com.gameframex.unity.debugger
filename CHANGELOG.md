@@ -1,3 +1,13 @@
+# [2.0.0](https://github.com/gameframex/com.gameframex.unity.debugger/compare/1.3.0...2.0.0) (2026-10-15)
+
+
+* feat(module)!: 调试器迁移模块接口契约并窗口模块直达 ([ca0a485](https://github.com/gameframex/com.gameframex.unity.debugger/commit/ca0a48563707fb937c4ed0e427fe2f6ca87c70f6))
+
+
+### BREAKING CHANGES
+
+* DebuggerManager 模块契约全接口化，能力方法改由宿主入口调用。
+
 ## [Unreleased]
 
 ### Bug Fixes / 重构
