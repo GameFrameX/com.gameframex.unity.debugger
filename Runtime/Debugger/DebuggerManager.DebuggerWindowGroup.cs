@@ -1,5 +1,5 @@
-﻿//------------------------------------------------------------
-// Game Framework
+//------------------------------------------------------------
+// GameFrameX
 // Copyright © 2013-2021 Jiang Yin. All rights reserved.
 // Homepage: https://gameframework.cn/
 // Feedback: mailto:ellan@gameframework.cn
@@ -10,7 +10,7 @@ using GameFrameX.Runtime;
 
 namespace GameFrameX.Debugger.Runtime
 {
-    internal sealed partial class DebuggerManager : GameFrameworkModule, IDebuggerManager
+    internal sealed partial class DebuggerManager : IGameFrameworkModule, IDebuggerManager
     {
         /// <summary>
         /// 调试器窗口组。

@@ -1,5 +1,5 @@
 ﻿// //------------------------------------------------------------
-// // Game Framework
+// // GameFrameX
 // // Copyright © 2013-2021 Jiang Yin. All rights reserved.
 // // Homepage: https://gameframework.cn/
 // // Feedback: mailto:ellan@gameframework.cn
@@ -47,15 +47,15 @@
 //                         }
 //                     }
 //
-//                     if (GUILayout.Button("Shutdown Game Framework (None)", GUILayout.Height(30f)))
+//                     if (GUILayout.Button("Shutdown GameFrameX (None)", GUILayout.Height(30f)))
 //                     {
 //                         GameEntry.Shutdown(ShutdownType.None);
 //                     }
-//                     if (GUILayout.Button("Shutdown Game Framework (Restart)", GUILayout.Height(30f)))
+//                     if (GUILayout.Button("Shutdown GameFrameX (Restart)", GUILayout.Height(30f)))
 //                     {
 //                         GameEntry.Shutdown(ShutdownType.Restart);
 //                     }
-//                     if (GUILayout.Button("Shutdown Game Framework (Quit)", GUILayout.Height(30f)))
+//                     if (GUILayout.Button("Shutdown GameFrameX (Quit)", GUILayout.Height(30f)))
 //                     {
 //                         GameEntry.Shutdown(ShutdownType.Quit);
 //                     }

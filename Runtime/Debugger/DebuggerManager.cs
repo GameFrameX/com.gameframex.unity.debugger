@@ -1,5 +1,5 @@
-﻿//------------------------------------------------------------
-// Game Framework
+//------------------------------------------------------------
+// GameFrameX
 // Copyright © 2013-2021 Jiang Yin. All rights reserved.
 // Homepage: https://gameframework.cn/
 // Feedback: mailto:ellan@gameframework.cn
@@ -13,7 +13,7 @@ namespace GameFrameX.Debugger.Runtime
     /// 调试器管理器。
     /// </summary>
     [UnityEngine.Scripting.Preserve]
-    internal sealed partial class DebuggerManager : GameFrameworkModule, IDebuggerManager
+    internal sealed partial class DebuggerManager : IGameFrameworkModule, IDebuggerManager, IUpdatableModule, IShutdownableModule, IPrioritizedModule
     {
         private readonly DebuggerWindowGroup m_DebuggerWindowRoot;
         private bool m_ActiveWindow;
@@ -32,7 +32,7 @@ namespace GameFrameX.Debugger.Runtime
         /// 获取游戏框架模块优先级。
         /// </summary>
         /// <remarks>优先级较高的模块会优先轮询，并且关闭操作会后进行。</remarks>
-        protected override int Priority
+        public int Priority
         {
             get { return -1; }
         }
@@ -59,7 +59,7 @@ namespace GameFrameX.Debugger.Runtime
         /// </summary>
         /// <param name="elapseSeconds">逻辑流逝时间，以秒为单位。</param>
         /// <param name="realElapseSeconds">真实流逝时间，以秒为单位。</param>
-        protected override void Update(float elapseSeconds, float realElapseSeconds)
+        public void Update(float elapseSeconds, float realElapseSeconds)
         {
             if (!m_ActiveWindow)
             {
@@ -72,7 +72,7 @@ namespace GameFrameX.Debugger.Runtime
         /// <summary>
         /// 关闭并清理调试器管理器。
         /// </summary>
-        protected override void Shutdown()
+        public void Shutdown()
         {
             m_ActiveWindow = false;
             m_DebuggerWindowRoot.Shutdown();

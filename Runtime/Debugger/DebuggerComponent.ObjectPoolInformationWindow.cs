@@ -1,5 +1,5 @@
 ﻿//------------------------------------------------------------
-// Game Framework
+// GameFrameX
 // Copyright © 2013-2021 Jiang Yin. All rights reserved.
 // Homepage: https://gameframework.cn/
 // Feedback: mailto:ellan@gameframework.cn
@@ -17,12 +17,12 @@ namespace GameFrameX.Debugger.Runtime
     {
         private sealed class ObjectPoolInformationWindow : ScrollableDebuggerWindowBase
         {
-            private ObjectPoolComponent m_ObjectPoolComponent = null;
+            private IObjectPoolManager m_ObjectPoolManager = null;
 
             public override void Initialize(params object[] args)
             {
-                m_ObjectPoolComponent = GameEntry.GetComponent<ObjectPoolComponent>();
-                if (m_ObjectPoolComponent == null)
+                m_ObjectPoolManager = GameFrameworkEntry.GetModule<IObjectPoolManager>();
+                if (m_ObjectPoolManager == null)
                 {
                     Log.Fatal("Object pool component is invalid.");
                     return;
@@ -34,10 +34,10 @@ namespace GameFrameX.Debugger.Runtime
                 GUILayout.Label("<b>Object Pool Information</b>");
                 GUILayout.BeginVertical("box");
                 {
-                    DrawItem("Object Pool Count", m_ObjectPoolComponent.Count.ToString());
+                    DrawItem("Object Pool Count", m_ObjectPoolManager.Count.ToString());
                 }
                 GUILayout.EndVertical();
-                ObjectPoolBase[] objectPools = m_ObjectPoolComponent.GetAllObjectPools(true);
+                ObjectPoolBase[] objectPools = m_ObjectPoolManager.GetAllObjectPools(true);
                 for (int i = 0; i < objectPools.Length; i++)
                 {
                     DrawObjectPool(objectPools[i]);

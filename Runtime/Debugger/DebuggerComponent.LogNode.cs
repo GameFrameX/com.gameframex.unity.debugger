@@ -1,5 +1,5 @@
 ﻿//------------------------------------------------------------
-// Game Framework
+// GameFrameX
 // Copyright © 2013-2021 Jiang Yin. All rights reserved.
 // Homepage: https://gameframework.cn/
 // Feedback: mailto:ellan@gameframework.cn
@@ -29,6 +29,7 @@ namespace GameFrameX.Debugger.Runtime
             /// <summary>
             /// 初始化日志记录结点的新实例。
             /// </summary>
+            [UnityEngine.Scripting.Preserve]
             public LogNode()
             {
                 m_LogTime = default(DateTime);
@@ -41,6 +42,7 @@ namespace GameFrameX.Debugger.Runtime
             /// <summary>
             /// 获取日志时间。
             /// </summary>
+            [UnityEngine.Scripting.Preserve]
             public DateTime LogTime
             {
                 get
@@ -52,6 +54,7 @@ namespace GameFrameX.Debugger.Runtime
             /// <summary>
             /// 获取日志帧计数。
             /// </summary>
+            [UnityEngine.Scripting.Preserve]
             public int LogFrameCount
             {
                 get
@@ -63,6 +66,7 @@ namespace GameFrameX.Debugger.Runtime
             /// <summary>
             /// 获取日志类型。
             /// </summary>
+            [UnityEngine.Scripting.Preserve]
             public LogType LogType
             {
                 get
@@ -74,6 +78,7 @@ namespace GameFrameX.Debugger.Runtime
             /// <summary>
             /// 获取日志内容。
             /// </summary>
+            [UnityEngine.Scripting.Preserve]
             public string LogMessage
             {
                 get
@@ -85,6 +90,7 @@ namespace GameFrameX.Debugger.Runtime
             /// <summary>
             /// 获取日志堆栈信息。
             /// </summary>
+            [UnityEngine.Scripting.Preserve]
             public string StackTrack
             {
                 get
@@ -100,6 +106,7 @@ namespace GameFrameX.Debugger.Runtime
             /// <param name="logMessage">日志内容。</param>
             /// <param name="stackTrack">日志堆栈信息。</param>
             /// <returns>创建的日志记录结点。</returns>
+            [UnityEngine.Scripting.Preserve]
             public static LogNode Create(LogType logType, string logMessage, string stackTrack)
             {
                 LogNode logNode = ReferencePool.Acquire<LogNode>();
@@ -114,6 +121,7 @@ namespace GameFrameX.Debugger.Runtime
             /// <summary>
             /// 清理日志记录结点。
             /// </summary>
+            [UnityEngine.Scripting.Preserve]
             public void Clear()
             {
                 m_LogTime = default(DateTime);

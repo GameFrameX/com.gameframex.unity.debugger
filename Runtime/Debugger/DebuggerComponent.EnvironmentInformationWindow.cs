@@ -1,5 +1,5 @@
 ﻿//------------------------------------------------------------
-// Game Framework
+// GameFrameX
 // Copyright © 2013-2021 Jiang Yin. All rights reserved.
 // Homepage: https://gameframework.cn/
 // Feedback: mailto:ellan@gameframework.cn
@@ -51,7 +51,7 @@ namespace GameFrameX.Debugger.Runtime
 #else
                     DrawItem("Game Identifier", Application.bundleIdentifier);
 #endif
-                    DrawItem("Game Framework Version",  GameVersion.GameFrameworkVersion);
+                    DrawItem("GameFrameX Version",  GameVersion.GameFrameworkVersion);
                     DrawItem("Game Version", Utility.Text.Format("{0} ({1})", GameVersion.AppVersion, GameVersion.GameFrameworkVersion));
                     // DrawItem("Resource Version", m_BaseComponent.EditorResourceMode ? "Unavailable in editor resource mode" : (string.IsNullOrEmpty(m_ResourceComponent.ApplicableGameVersion) ? "Unknown" : Utility.Text.Format("{0} ({1})", m_ResourceComponent.ApplicableGameVersion, m_ResourceComponent.InternalResourceVersion)));
                     DrawItem("Application Version", Application.version);

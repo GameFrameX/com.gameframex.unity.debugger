@@ -1,37 +1,37 @@
 {
-  "name": "com.gameframex.unity.debugger",
-  "displayName": "Game Frame X Debugger",
-  "category": "Game Framework X",
-  "description": "Game Frame X Debugger Component",
-  "version": "1.3.0",
-  "unity": "2019.4",
-  "keywords": [
-    "Game Framework X"
-  ],
-  "repository": {
     "name": "com.gameframex.unity.debugger",
-    "url": "git+https://github.com/gameframex/com.gameframex.unity.debugger.git",
-    "type": "git"
-  },
-  "author": {
-    "name": "Blank",
-    "email": "alianblank@outlook.com",
-    "url": "https://gameframex.doc.alianblank.com"
-  },
-  "dependencies": {
-    "com.gameframex.unity": "2.5.1",
-    "com.gameframex.unity.setting": "1.6.0"
-  },
-  "devDependencies": {
-    "semantic-release": "^24.2.0",
-    "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/git": "^10.0.1"
-  },
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.cnb.cool/GameFrameX/npm/-/packages/"
-  },
-  "documentationUrl": "https://gameframex.doc.alianblank.com",
-  "changelogUrl": "https://github.com/gameframex/com.gameframex.unity.debugger/blob/main/CHANGELOG.md",
-  "licensesUrl": "https://github.com/gameframex/com.gameframex.unity.debugger/blob/main/LICENSE.md"
+    "displayName": "Game Frame X Debugger",
+    "category": "Game Frame X",
+    "description": "Game Frame X Debugger Component",
+    "version": "2.0.0",
+    "unity": "2019.4",
+    "keywords": [
+        "Game Frame X"
+    ],
+    "repository": {
+        "name": "com.gameframex.unity.debugger",
+        "url": "git+https://github.com/gameframex/com.gameframex.unity.debugger.git",
+        "type": "git"
+    },
+    "author": {
+        "name": "Blank",
+        "email": "alianblank@outlook.com",
+        "url": "https://gameframex.doc.alianblank.com"
+    },
+    "dependencies": {
+        "com.gameframex.unity": "3.0.0",
+        "com.gameframex.unity.setting": "2.0.0"
+    },
+    "devDependencies": {
+        "semantic-release": "^24.2.0",
+        "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/git": "^10.0.1"
+    },
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://npm.cnb.cool/GameFrameX/npm/-/packages/"
+    },
+    "documentationUrl": "https://gameframex.doc.alianblank.com",
+    "changelogUrl": "https://github.com/gameframex/com.gameframex.unity.debugger/blob/main/CHANGELOG.md",
+    "licensesUrl": "https://github.com/gameframex/com.gameframex.unity.debugger/blob/main/LICENSE.md"
 }

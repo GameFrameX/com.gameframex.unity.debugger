@@ -1,5 +1,5 @@
 ﻿//------------------------------------------------------------
-// Game Framework
+// GameFrameX
 // Copyright © 2013-2021 Jiang Yin. All rights reserved.
 // Homepage: https://gameframework.cn/
 // Feedback: mailto:ellan@gameframework.cn
@@ -17,7 +17,7 @@ namespace GameFrameX.Debugger.Runtime
     /// 调试器组件。
     /// </summary>
     [DisallowMultipleComponent]
-    [AddComponentMenu("Game Framework/Debugger")]
+    [AddComponentMenu("GameFrameX/Debugger")]
     [GameFrameXAutoComponent(9000)]
     public sealed partial class DebuggerComponent : GameFrameworkComponent
     {
@@ -91,6 +91,7 @@ namespace GameFrameX.Debugger.Runtime
         /// <summary>
         /// 获取或设置调试器窗口是否激活。
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public bool ActiveWindow
         {
             get { return m_DebuggerManager.ActiveWindow; }
@@ -104,6 +105,7 @@ namespace GameFrameX.Debugger.Runtime
         /// <summary>
         /// 获取或设置是否显示完整调试器界面。
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public bool ShowFullWindow
         {
             get { return m_ShowFullWindow; }
@@ -113,6 +115,7 @@ namespace GameFrameX.Debugger.Runtime
         /// <summary>
         /// 获取或设置调试器漂浮框大小。
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public Rect IconRect
         {
             get { return m_IconRect; }
@@ -122,6 +125,7 @@ namespace GameFrameX.Debugger.Runtime
         /// <summary>
         /// 获取或设置调试器窗口大小。
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public Rect WindowRect
         {
             get { return m_WindowRect; }
@@ -131,6 +135,7 @@ namespace GameFrameX.Debugger.Runtime
         /// <summary>
         /// 获取或设置调试器窗口缩放比例。
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public float WindowScale
         {
             get { return m_WindowScale; }
@@ -249,6 +254,7 @@ namespace GameFrameX.Debugger.Runtime
         /// <param name="path">调试器窗口路径。</param>
         /// <param name="debuggerWindow">要注册的调试器窗口。</param>
         /// <param name="args">初始化调试器窗口参数。</param>
+        [UnityEngine.Scripting.Preserve]
         public void RegisterDebuggerWindow(string path, IDebuggerWindow debuggerWindow, params object[] args)
         {
             m_DebuggerManager.RegisterDebuggerWindow(path, debuggerWindow, args);
@@ -259,6 +265,7 @@ namespace GameFrameX.Debugger.Runtime
         /// </summary>
         /// <param name="path">调试器窗口路径。</param>
         /// <returns>是否解除注册调试器窗口成功。</returns>
+        [UnityEngine.Scripting.Preserve]
         public bool UnregisterDebuggerWindow(string path)
         {
             return m_DebuggerManager.UnregisterDebuggerWindow(path);
@@ -269,6 +276,7 @@ namespace GameFrameX.Debugger.Runtime
         /// </summary>
         /// <param name="path">调试器窗口路径。</param>
         /// <returns>要获取的调试器窗口。</returns>
+        [UnityEngine.Scripting.Preserve]
         public IDebuggerWindow GetDebuggerWindow(string path)
         {
             return m_DebuggerManager.GetDebuggerWindow(path);
@@ -279,6 +287,7 @@ namespace GameFrameX.Debugger.Runtime
         /// </summary>
         /// <param name="path">调试器窗口路径。</param>
         /// <returns>是否成功选中调试器窗口。</returns>
+        [UnityEngine.Scripting.Preserve]
         public bool SelectDebuggerWindow(string path)
         {
             return m_DebuggerManager.SelectDebuggerWindow(path);
@@ -287,6 +296,7 @@ namespace GameFrameX.Debugger.Runtime
         /// <summary>
         /// 还原调试器窗口布局。
         /// </summary>
+        [UnityEngine.Scripting.Preserve]
         public void ResetLayout()
         {
             IconRect = DefaultIconRect;
@@ -298,6 +308,7 @@ namespace GameFrameX.Debugger.Runtime
         /// 获取记录的所有日志。
         /// </summary>
         /// <param name="results">要获取的日志。</param>
+        [UnityEngine.Scripting.Preserve]
         public void GetRecentLogs(List<LogNode> results)
         {
             m_ConsoleWindow.GetRecentLogs(results);
@@ -308,6 +319,7 @@ namespace GameFrameX.Debugger.Runtime
         /// </summary>
         /// <param name="results">要获取的日志。</param>
         /// <param name="count">要获取最近日志的数量。</param>
+        [UnityEngine.Scripting.Preserve]
         public void GetRecentLogs(List<LogNode> results, int count)
         {
             m_ConsoleWindow.GetRecentLogs(results, count);
