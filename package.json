@@ -2,7 +2,7 @@
     "name": "com.gameframex.unity.debugger",
     "displayName": "Game Frame X Debugger",
     "category": "Game Frame X",
-    "description": "Game Frame X Debugger Component",
+    "description": "GameFrameX Debugger — Unity in-game debugging overlay package. Provides a movable on-screen window with FPS counter, console (info / warning counts and log browsing), profiler, runtime memory summaries and per-type details, object pool and reference pool inspectors, settings, plus system / environment / screen / graphics / quality / scene / path / time / input (touch, accelerometer, gyroscope, compass, location) information windows. Custom windows register by path through RegisterDebuggerWindow; windows read framework modules directly via GetModule<T>() without depending on business components. Docs: https://gameframex.doc.alianblank.com\n\nGameFrameX Debugger — Unity 游戏内调试悬浮窗功能包。提供可移动的屏幕窗口：FPS 计数器、控制台（信息/警告计数与日志浏览）、Profiler、运行时内存摘要与按类型详情、对象池/引用池查看、设置，以及系统/环境/屏幕/图形/质量/场景/路径/时间/输入（触控、加速度、陀螺仪、罗盘、定位）等信息窗口。自定义窗口经 RegisterDebuggerWindow 按路径注册，各窗口经 GetModule<T>() 直达框架模块，不依赖业务组件。文档：https://gameframex.doc.alianblank.com",
     "version": "2.0.0",
     "unity": "2019.4",
     "keywords": [
